@@ -12,11 +12,11 @@ const Navbar = () => {
     
     <div  className=' w-full absolute top-0 right-0 z-10 bg-transparent  '>
       <div className='md:flex items-center justify-between py-3 md:px-7 px-4'>
-      <div className='  text-2xl cursor-pointer flex  items-center  text-white'>
+      <div className=' cursor-pointer flex  items-center  text-white'>
         <span className=' text-xl md:text-3xl mr-1 pt-2'>
         {/* Logo Placeholder */}
         </span>
-        <NavLink to="/" className='text-white font-bold duration-500 drop-shadow-lg' onClick={()=>setOpen(false)}>V Vardhan Architects & Associates</NavLink>
+        <NavLink to="/" className='text-white font-bold sm:text-2xl  text-l duration-500 drop-shadow-lg' onClick={()=>setOpen(false)}>V Vardhan Architects & Associates</NavLink>
       </div>
       
       <div onClick={()=>setOpen(!open)} className='text-3xl text-white absolute right-8 top-4 cursor-pointer md:hidden '>
