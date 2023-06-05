@@ -1,33 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import React,{useState, useEffect} from "react"
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Home from "./Pages/Home"
+import Layout from "./Pages/Layout"
+import About from "./Pages/About"
+import Contact from "./Pages/Contact"
+import Projects from "./Pages/Projects"
+import Loader from "./Components/Loader"
+import Studiowork from "./Pages/Studiowork"
 function App() {
-  const [count, setCount] = useState(0)
+  
+  const[loading, setLoading] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(()=> setLoading(false),2500)
+  },[])
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    {
+      loading ? <Loader />: <></>
+
+    }
+
+  <BrowserRouter>
+    <Routes>
+      <Route element={<Layout />}>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/studowork" element={<Studiowork />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/contact" element={<Contact />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+    
+     
     </>
   )
 }
