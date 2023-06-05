@@ -1,7 +1,7 @@
 import React from 'react';
 import Animationtext from './Animationtext';
 import {motion, AnimatePresence} from 'framer-motion';
-import Logo from '../assets/vvaa transparent.png'
+import Logo from '../assets/vvaa transparent.webp'
 
 const Loader = () => {
 
