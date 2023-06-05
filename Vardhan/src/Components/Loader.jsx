@@ -13,7 +13,7 @@ const Loader = () => {
 <motion.div 
     initial={{opacity: 1}}
     animate={{opacity: 0}}
-    transition={{duration: 1, 
+    transition={{duration: 3, 
                 delay: 2,
                 ease: [0, 0.71, 0.2, 1.01]
                 }}
@@ -44,7 +44,7 @@ const Loader = () => {
     <motion.div 
         initial={{opacity: 1,scale: 0.7 ,}}
         animate={{opacity: 0, scale: 1 }}
-        transition={{duration: 1.1, delay: 1.7, ease: "anticipate"}}
+        transition={{duration: 3, delay: 1.7, ease: "anticipate"}}
     className='fixed text-[#fecd9b] w-screen h-screen flex items-center justify-center z-50 text-4xl font-bold'>
     <div className='flex  flex-col justify-center items-center'>
     <img className='w-96 m-4' alt='logo' src={Logo}/>
