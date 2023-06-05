@@ -2,6 +2,7 @@ import React from 'react';
 import Animationtext from './Animationtext';
 import {motion, AnimatePresence} from 'framer-motion';
 import Logo from '../assets/vvaa transparent.webp'
+import svgLogo from '../assets/vvaa.svg'
 
 const Loader = () => {
 
@@ -9,17 +10,6 @@ const Loader = () => {
   return (
     <>
 <AnimatePresence>
-
-<motion.div 
-    initial={{opacity: 1}}
-    animate={{opacity: 0}}
-    transition={{duration: 3, 
-                delay: 2,
-                ease: [0, 0.71, 0.2, 1.01]
-                }}
-    className='fixed bg-[#904B55]  h-screen  w-screen z-50'></motion.div>
-
-
 
 
 {/* <motion.div 
@@ -41,14 +31,23 @@ const Loader = () => {
     className='fixed bg-[#904b55] h-screen w-screen z-10'></motion.div> */}
 
 
+  <motion.div 
+      initial={{opacity: 1}}
+      animate={{opacity: 0}}
+      transition={{duration: 4, 
+                  delay: 1.7,
+                  ease: [0, 0.71, 0.2, 1.01],
+                  }}
+      className='fixed bg-[#904B55]  h-screen  w-screen z-50'></motion.div>
+
     <motion.div 
-        initial={{opacity: 1,scale: 0.7 ,}}
-        animate={{opacity: 0, scale: 1 }}
-        transition={{duration: 3, delay: 1.7, ease: "anticipate"}}
+        initial={{opacity: 1}}
+        animate={{opacity: 0}}
+        transition={{duration: 4, delay: 1.7, ease: [0, 0.71, 0.2, 1.01],}}
     className='fixed text-[#fecd9b] w-screen h-screen flex items-center justify-center z-50 text-4xl font-bold'>
     <div className='flex  flex-col justify-center items-center'>
-    <img className='w-96 m-4' alt='logo' src={Logo}/>
-    <Animationtext  text="Earth. Air. Light."/>
+    <img className='w-[70%] m-4 fill-white' alt='logo' src={Logo}/>
+    <Animationtext  text="Earth Air Light"/>
 
     </div>
     

@@ -7,7 +7,7 @@ import img3 from '../assets/StaggeringImages/stgimg3.webp'
 export default function StaggerImg() {
   return (
     <>
-        <div className='  md:m-16 flex  md:flex-row flex-col items-center justify-center  md:gap-5' >
+        <div className=' my-16 md:m-16 flex  md:flex-row flex-col items-center justify-center  md:gap-5' >
         <div className='md:w-[30%] relative overflow-hidden p-8 '>
             <motion.div 
                 initial={{left: 0}}

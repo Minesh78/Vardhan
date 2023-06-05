@@ -12,7 +12,7 @@ function App() {
   const[loading, setLoading] = useState(true)
 
   useEffect(()=>{
-    setTimeout(()=> setLoading(false),2500)
+    setTimeout(()=> setLoading(false),3000)
   },[])
 
   return (
@@ -27,7 +27,7 @@ function App() {
       <Route element={<Layout />}>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/studowork" element={<Studiowork />} />
+      <Route path="/studiowork" element={<Studiowork />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />
       </Route>
