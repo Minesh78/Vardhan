@@ -13,7 +13,7 @@ export default function Logoanimation() {
             hidden:{ opacity:0 },
             visible:( i = 1 )=>( {
                 opacity:1,
-                transition: {staggerChildren:0.12, delayChildren: 1* i },
+                transition: {staggerChildren:2, delayChildren: 1* i },
             }),
         }
     

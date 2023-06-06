@@ -18,7 +18,7 @@ const Loader = () => {
       initial={{opacity: 1}}
       animate={{opacity: 0}}
       transition={{duration: 8, 
-                  delay: 6,
+                  delay: 8,
                   ease: easeInOut,
                   }}
       className='fixed bg-[#904B55]  h-screen  w-screen z-50'>
@@ -27,7 +27,7 @@ const Loader = () => {
       initial={{opacity:1,} }
       animate={{opacity:0,} }
       transition={{duration: 8, 
-                  delay: 6,
+                  delay: 8,
                   ease: easeInOut,
                   }}
                   
