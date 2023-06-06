@@ -1,8 +1,10 @@
 import React from 'react';
 import Animationtext from './Animationtext';
-import {motion, AnimatePresence} from 'framer-motion';
+import {motion, AnimatePresence, easeInOut} from 'framer-motion';
 import Logo from '../assets/vvaa transparent.webp'
 import svgLogo from '../assets/vvaa.svg'
+import vvaa from '../assets/VVAA.png'
+import Logoanimation from './Logoanimation';
 
 const Loader = () => {
 
@@ -11,6 +13,32 @@ const Loader = () => {
     <>
 <AnimatePresence>
 
+
+  <motion.div 
+      initial={{opacity: 1}}
+      animate={{opacity: 0}}
+      transition={{duration: 8, 
+                  delay: 6,
+                  ease: easeInOut,
+                  }}
+      className='fixed bg-[#904B55]  h-screen  w-screen z-50'>
+
+      <motion.div
+      initial={{opacity:1,} }
+      animate={{opacity:0,} }
+      transition={{duration: 8, 
+                  delay: 6,
+                  ease: easeInOut,
+                  }}
+                  
+                  className='scale-150'
+                  >
+        {/* <img src={vvaa}/> */}
+
+        <Logoanimation/>
+
+      </motion.div>
+      </motion.div>
 
 {/* <motion.div 
     initial={{left: 0}}
@@ -31,16 +59,7 @@ const Loader = () => {
     className='fixed bg-[#904b55] h-screen w-screen z-10'></motion.div> */}
 
 
-  <motion.div 
-      initial={{opacity: 1}}
-      animate={{opacity: 0}}
-      transition={{duration: 4, 
-                  delay: 1.7,
-                  ease: [0, 0.71, 0.2, 1.01],
-                  }}
-      className='fixed bg-[#904B55]  h-screen  w-screen z-50'></motion.div>
-
-    <motion.div 
+    {/* <motion.div 
         initial={{opacity: 1}}
         animate={{opacity: 0}}
         transition={{duration: 4, delay: 1.7, ease: [0, 0.71, 0.2, 1.01],}}
@@ -51,7 +70,7 @@ const Loader = () => {
 
     </div>
     
-    </motion.div>
+    </motion.div> */}
     </AnimatePresence>
     </>
   )

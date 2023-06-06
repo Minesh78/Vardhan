@@ -5,7 +5,7 @@ const Contact = () => {
     <>
        <div className='bg-[#904B55] md:h-14 h-12 relative'> </div>
       
-      <div className=' mt-20 md:mt-32 md:w-[60%] w-[80%] mx-auto text-center flex flex-col gap-10 text-2xl' >
+      <div className=' mt-32 text-[#707271] md:mt-36 md:w-[60%] w-[80%] mx-auto text-center flex flex-col gap-10 text-xl' >
 
         <h1><span className='font-bold'>For internship and job opportunities:</span> <br/>Email id - jobs.vvardhan@gmail.com</h1>
 
