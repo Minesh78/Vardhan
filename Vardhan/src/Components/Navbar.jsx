@@ -26,19 +26,19 @@ const Navbar = () => {
       <ul onClick={()=>setOpen(!open)} className={`md:flex md:items-center md:pb-0 pb-1  absolute md:static  md:z-auto z-[-1] left-0 w-full   md:w-auto md:pl-0 pl-9 backdrop-blur-sm md:backdrop-blur-0 bg-[#200b0e6e]  md:bg-transparent transition-all duration-500  ease-in ${open ? 'top-12 ':'top-[-350px] ' }`}>
         
             <li  className='md:ml-8 text-l md:my-0 my-7 '>
-              <NavLink to="/about" className='text-white hover:text-gray-400 duration-500'>ABOUT</NavLink>
+              <NavLink to="/about" className='text-white hover:text-gray-400 duration-500'>About</NavLink>
             </li>
 
             <li  className='md:ml-6 text-l md:my-0 my-7'>
-              <NavLink to="/projects" className='text-white hover:text-gray-400 duration-500'>PROJECTS</NavLink>
+              <NavLink to="/projects" className='text-white hover:text-gray-400 duration-500'>Projects</NavLink>
             </li>
 
             <li  className='md:ml-8 text-l md:my-0 my-7'>
-              <NavLink to="/studiowork" className='text-white hover:text-gray-400 duration-500'>STUDIO WORK</NavLink>
+              <NavLink to="/studiowork" className='text-white hover:text-gray-400 duration-500'>Studio Work</NavLink>
             </li>
 
             <li  className='md:ml-8 text-l md:my-0 my-7'>
-              <NavLink to="/contact" className='text-white hover:text-gray-400  hover:scale-100 duration-500'>CONTACT</NavLink>
+              <NavLink to="/contact" className='text-white hover:text-gray-400  hover:scale-100 duration-500'>Contact</NavLink>
             </li>
         
       </ul>
