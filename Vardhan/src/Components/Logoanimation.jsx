@@ -40,7 +40,7 @@ export default function Logoanimation() {
         }
   return (
     <>
-    <motion.div variants={container}initial='hidden' animate='visible' className='md:translate-y-[-200px] translate-y-[150px] translate-x-[10px]'>
+    <motion.div variants={container} initial='hidden' animate='visible' className='md:translate-y-[-200px] translate-y-[150px] translate-x-[10px]'>
     <motion.div variants={child} className='absolute' ><img alt="logo1" src={img1}></img></motion.div>
     <motion.div variants={child} className='absolute' ><img alt="logo2" src={img2}></img></motion.div>
     <motion.div variants={child} className='absolute' ><img alt="logo3" src={img3}></img></motion.div>

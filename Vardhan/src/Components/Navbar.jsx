@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import { NavLink } from 'react-router-dom';
+import { slide as Menu } from 'react-burger-menu'
+
 
 
 
@@ -10,7 +12,7 @@ const Navbar = () => {
   return (
     <>
     
-    <div  className=' w-full fixed top-0 right-0 z-10 bg-transparent  '>
+    <div  className=' w-full fixed top-0 right-0 z-10 bg-[#904B55]   '>
       <div className='md:flex items-center justify-between py-3 md:px-7 px-4'>
       <div className=' cursor-pointer flex  items-center  text-white'>
         <span className=' text-xl md:text-3xl mr-1 pt-2'>

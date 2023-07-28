@@ -1,13 +1,11 @@
 import React from 'react'
-import Hero from '../Components/Hero'
-import StaggerImg from '../Components/StaggerImg'
-import Mainimg from '../Components/Mainimg'
+import WindowWidthRenderer from '../Components/WindowWidthRenderer'
+
 
 const Home = () => {
   return (
     <>
-      <Hero />
-      <Mainimg/>
+    <WindowWidthRenderer />     
     </>
   )
 }
